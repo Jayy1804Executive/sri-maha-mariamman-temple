@@ -1,0 +1,6 @@
+{
+  "name": "Sri Maha Mariamman & Sri Perumal Temple",
+  "description": "Official website for Persatuan Penganut Sri Maha Mariamman & Sri Perumal, Puchong Perdana, Selangor, Malaysia - Pooja bookings, darshan timings, hall reservations, and e-donations.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
