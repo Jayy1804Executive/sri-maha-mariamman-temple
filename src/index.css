@@ -1,0 +1,67 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-cinzel: 'Cinzel', serif;
+    --font-playfair: 'Playfair Display', serif;
+    --font-sans: 'Plus Jakarta Sans', sans-serif;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    color: #1F1F1F;
+    background-color: #FBF9F5;
+  }
+
+  h1, h2, h3, .font-cinzel {
+    font-family: var(--font-cinzel);
+  }
+
+  .font-playfair {
+    font-family: var(--font-playfair);
+  }
+}
+
+/* Custom Kolam pattern overlay */
+.bg-kolam-pattern {
+  background-image: radial-gradient(rgba(212, 175, 55, 0.12) 1.5px, transparent 1.5px),
+                    radial-gradient(rgba(107, 17, 26, 0.08) 1.5px, #FBF9F5 1.5px);
+  background-size: 36px 36px;
+  background-position: 0 0, 18px 18px;
+}
+
+.bg-mandala-radial {
+  background: radial-gradient(circle at 50% 30%, rgba(212, 175, 55, 0.15) 0%, rgba(107, 17, 26, 0.05) 50%, transparent 70%);
+}
+
+.gold-gradient-text {
+  background: linear-gradient(135deg, #B38E22 0%, #D4AF37 50%, #8A6D1C 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.maroon-gradient {
+  background: linear-gradient(135deg, #6B111A 0%, #4A0B12 100%);
+}
+
+.gold-gradient {
+  background: linear-gradient(135deg, #D4AF37 0%, #C5832B 100%);
+}
+
+/* Diya glow animation */
+@keyframes flame-flicker {
+  0%, 100% {
+    opacity: 0.9;
+    transform: scale(1) translateY(0);
+    filter: drop-shadow(0 0 8px rgba(230, 154, 59, 0.8));
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.08) translateY(-2px);
+    filter: drop-shadow(0 0 16px rgba(244, 228, 166, 1));
+  }
+}
+
+.animate-diya {
+  animation: flame-flicker 2.4s ease-in-out infinite alternate;
+}
